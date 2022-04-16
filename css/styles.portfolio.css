@@ -1,0 +1,265 @@
+:root {
+  --hover-color: #2196f3;
+  --accent-color: #212121;
+  --wite-color: #ffffff;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--wite-color);
+  font-family: "Roboto", sans-serif;
+}
+.page-header {
+  background-color: var(--wite-color);
+  border-bottom: 1px solid #ececec;
+}
+.header-all {
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.web-header {
+  color: var(--hover-color);
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  list-style: none;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link-header {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+a {
+  text-decoration: none;
+}
+.link-header:hover,
+.link-header:focus {
+  color: var(--hover-color);
+}
+.site-nav .current-link {
+  color: var(--hover-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+.auth-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.auth-nav .item + .item {
+  padding-left: 50px;
+}
+
+.auth-nav .link-info {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+.link-info:hover,
+.link-info:focus {
+  color: var(--hover-color);
+}
+
+h1 {
+  display: none;
+}
+.button-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+.button-nav .button-nav-button + .button-nav-button {
+  margin-left: 8px;
+}
+
+.button-nav .current {
+  background-color: var(--hover-color);
+  color: var(--wite-color);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  width: 145px;
+
+  cursor: pointer;
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--hover-color);
+  color: var(--wite-color);
+}
+img {
+  display: block;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: -15px;
+}
+.flex-element {
+  width: 370px;
+  margin: 15px;
+}
+.element-text {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.text-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--accent-color);
+  background: var(--wite-color);
+}
+.text-main {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  background: var(--wite-color);
+  color: #757575;
+}
+footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.text-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--wite-color);
+}
+.web-footer {
+  color: var(--hover-color);
+}
+.link-footer {
+  display: block;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.link-adress > a {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--wite-color);
+}
+.link-adress > a:hover,
+.link-adress > a:focus {
+  color: var(--hover-color);
+}
+.link-mail > a {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-tel > a {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-mail > a:hover,
+.link-mail > a:focus {
+  color: var(--hover-color);
+}
+.link-tel > a:hover,
+.link-tel > a:focus {
+  color: var(--hover-color);
+}
