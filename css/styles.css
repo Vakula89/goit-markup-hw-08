@@ -191,13 +191,17 @@ section {
   text-transform: uppercase;
   line-height: 1.14;
 }
-.text-benefits::before {
-  display: block;
+.symbol-benefits {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  content: "";
   margin-bottom: 30px;
+}
+.benefits-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .text-description {
   margin-top: 0;
