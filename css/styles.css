@@ -95,7 +95,9 @@ a {
 }
 
 .auth-nav .link-info {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -108,6 +110,19 @@ a {
 .link-info:focus {
   color: var(--hover-color);
 }
+.icon-mail {
+  display: block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-tel {
+  display: block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .main-banner {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -192,7 +207,7 @@ section {
   line-height: 1.14;
 }
 .symbol-benefits {
-  display: flex;
+  display: block;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -271,7 +286,7 @@ img {
 }
 .text-profession {
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -283,6 +298,35 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--wite-color);
+}
+.sociale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociale-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--wite-color);
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.icon-sociale {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.sociale-link:hover,
+.sociale-link:focus {
+  color: var(--wite-color);
+  background-color: var(--hover-color);
+}
+
+.sociale .sociale-link + .sociale-link {
+  margin-left: 10px;
 }
 .partners-text {
   margin-top: 0;
