@@ -115,12 +115,14 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .icon-tel {
   display: block;
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .main-banner {
@@ -377,6 +379,10 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.foot {
+  display: flex;
+  align-items: baseline;
+}
 .text-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -434,4 +440,47 @@ footer {
 .link-tel > a:hover,
 .link-tel > a:focus {
   color: var(--hover-color);
+}
+.footer-sociale {
+  margin-left: 70px;
+  padding: 0;
+}
+.title-sociale {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--wite-color);
+}
+.list-sociale {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.link-sociale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--wite-color);
+}
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.link-sociale:hover,
+.link-sociale:focus {
+  color: var(--wite-color);
+  background-color: var(--hover-color);
+}
+.list-sociale li:not(:last-child) {
+  margin-right: 10px;
 }
