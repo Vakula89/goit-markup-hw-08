@@ -208,18 +208,20 @@ section {
   text-transform: uppercase;
   line-height: 1.14;
 }
-.symbol-benefits {
-  display: block;
-  width: 270px;
+.benefits-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
-.benefits-icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.icon-benefits {
+  width: 70px;
+  height: 70px;
 }
+
 .text-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -275,6 +277,10 @@ img {
 }
 .team-name .name-img + .name-img {
   margin-left: 30px;
+}
+.name-img {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .text-name {
   margin-top: 0;
