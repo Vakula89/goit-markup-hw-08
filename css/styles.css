@@ -312,6 +312,11 @@ img {
   justify-content: center;
   align-items: center;
 }
+.sociale-team {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .sociale-link {
   display: flex;
   justify-content: center;
@@ -333,8 +338,8 @@ img {
   background-color: var(--hover-color);
 }
 
-.sociale .sociale-link + .sociale-link {
-  margin-left: 10px;
+.sociale-team li:not(:last-child) {
+  margin-right: 10px;
 }
 .partners-text {
   margin-top: 0;
