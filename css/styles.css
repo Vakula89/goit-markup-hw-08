@@ -75,12 +75,24 @@ a {
 .link-header:hover,
 .link-header:focus {
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .current {
   color: var(--hover-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  position: relative;
+}
+.site-nav .current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid var(--hover-color);
+  border-radius: 2px;
+  background-color: var(--hover-color);
 }
 .auth-nav {
   display: flex;
@@ -109,6 +121,7 @@ a {
 .link-info:hover,
 .link-info:focus {
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail {
   display: block;
@@ -177,6 +190,7 @@ a {
 .button:hover,
 .button:focus {
   background-color: #188ce8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 section {
   padding-top: 94px;
@@ -248,6 +262,29 @@ section {
   margin-bottom: 0;
   padding-left: 0;
 }
+.about-us-img {
+  position: relative;
+}
+.description-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wite-color);
+}
+
 .about-us .about-us-img + .about-us-img {
   margin-left: 30px;
 }
@@ -336,6 +373,8 @@ img {
 .sociale-link:focus {
   color: var(--wite-color);
   background-color: var(--hover-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sociale-team li:not(:last-child) {
@@ -383,6 +422,8 @@ img {
 .logo:focus {
   color: var(--hover-color);
   border: 1px solid var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -426,6 +467,7 @@ footer {
 .link-adress > a:hover,
 .link-adress > a:focus {
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-mail > a {
   display: inline-block;
@@ -447,10 +489,12 @@ footer {
 .link-mail > a:hover,
 .link-mail > a:focus {
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-tel > a:hover,
 .link-tel > a:focus {
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sociale {
   margin-left: 70px;
@@ -491,6 +535,8 @@ footer {
 .link-sociale:focus {
   color: var(--wite-color);
   background-color: var(--hover-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-sociale li:not(:last-child) {
   margin-right: 10px;
