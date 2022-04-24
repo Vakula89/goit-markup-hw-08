@@ -552,6 +552,7 @@ footer {
   background: rgba(0, 0, 0, 0.2);
 }
 .backdrop .is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -577,7 +578,7 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  color: #000000;
+  color: #000;
 }
 .close-icon:hover,
 .close-icon:focus {
