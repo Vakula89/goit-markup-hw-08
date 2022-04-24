@@ -558,6 +558,7 @@ footer {
 }
 .modal {
   position: absolute;
+  transition: 500ms linear;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -578,7 +579,6 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  color: #000;
 }
 .close-icon:hover,
 .close-icon:focus {
