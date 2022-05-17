@@ -642,13 +642,11 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon:hover,
 .close-icon:focus {
   fill: var(--hover-color);
-  border: 1px solid var(--hover-color);
 }
 .data-user {
   padding: 40px;
@@ -727,6 +725,11 @@ footer {
   line-height: 1.167;
   letter-spacing: 0.01em;
 }
+.comment-user:focus,
+.comment-user:focus-visible {
+  border: 1px solid var(--hover-color);
+  outline: none;
+}
 .comment-user::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -782,6 +785,7 @@ footer {
   stroke-opacity: 0;
 }
 .contract {
+  margin-left: 5px;
   text-decoration: underline;
   text-underline-position: under;
   color: var(--hover-color);
