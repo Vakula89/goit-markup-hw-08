@@ -2,6 +2,7 @@
   --hover-color: #2196f3;
   --accent-color: #212121;
   --wite-color: #ffffff;
+  --grey-color: #757575;
 }
 h1,
 h2,
@@ -32,7 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.text-logo-header {
+.logo-header {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway";
@@ -113,7 +114,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: #757575;
+  color: var(--grey-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -179,7 +180,7 @@ a {
   padding: 10px 32px;
   width: 200px;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--wite-color);
   background-color: var(--hover-color);
   font-weight: 700;
   font-size: 16px;
@@ -241,7 +242,7 @@ section {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: #757575;
+  color: var(--grey-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -337,7 +338,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  color: #757575;
+  color: var(--grey-color);
   text-align: center;
 }
 .name-description {
@@ -675,7 +676,7 @@ footer {
 .form-field label {
   margin-bottom: 4px;
 
-  color: #757575;
+  color: var(--grey-color);
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
@@ -741,7 +742,7 @@ footer {
   align-items: center;
   margin-bottom: 30px;
 
-  color: #757575;
+  color: var(--grey-color);
   font-size: 14px;
   line-height: 1.714;
 }
