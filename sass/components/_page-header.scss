@@ -46,23 +46,23 @@
   &__link:focus {
     color: $hover-color;
   }
-  & .current {
-    color: $hover-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    position: relative;
-  }
-  &.current::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid $hover-color;
-    border-radius: 2px;
-    background-color: $hover-color;
-  }
+}
+.site-nav .current {
+  color: $hover-color;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  position: relative;
+}
+.site-nav .current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid $hover-color;
+  border-radius: 2px;
+  background-color: $hover-color;
 }
 
 .auth-nav {

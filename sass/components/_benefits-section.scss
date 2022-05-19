@@ -7,7 +7,7 @@
   display: flex;
   padding-left: 0;
 
-  .benefits .benefits__item + .benefits__item {
+  & &__item + &__item {
     margin-left: 30px;
   }
   &__item {
