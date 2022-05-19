@@ -546,7 +546,7 @@ footer {
 .subscription {
   margin-left: 93px;
 }
-.subscription-title {
+.subscription__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -557,10 +557,10 @@ footer {
 
   color: var(--wite-color);
 }
-.subscription-form {
+.subscription__form {
   display: flex;
 }
-.subscription-input {
+.subscription__input {
   width: 358px;
   height: 50px;
 
@@ -578,11 +578,11 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscription-input:hover,
-.subscription-input:focus {
+.subscription__input:hover,
+.subscription__input:focus {
   border: 1px solid var(--hover-color);
 }
-.subscription-input::placeholder {
+.subscription__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -592,16 +592,16 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscription-button {
+.subscription__button {
   display: flex;
   margin-left: 12px;
   height: 50px;
 }
-.subscription-button-icon {
+.subscription__icon {
   margin-left: 10px;
   fill: var(--wite-color);
 }
-.subscription-button-svg {
+.subscription__svg {
   color: var(--wite-color);
 }
 
