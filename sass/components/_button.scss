@@ -1,0 +1,42 @@
+.button {
+  padding: 10px 32px;
+  width: 200px;
+  cursor: pointer;
+  color: $wite-color;
+  background-color: $hover-color;
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  line-height: 1.88;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  &__btn-submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    transform: translateX(50%);
+
+    cursor: pointer;
+    color: $wite-color;
+    background-color: $hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    line-height: 1.88;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__btn-submit:hover,
+  &__btn-submit:focus {
+    background-color: #188ce8;
+  }
+}

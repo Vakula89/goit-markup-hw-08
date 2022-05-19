@@ -1,0 +1,110 @@
+.page-header {
+  background-color: $wite-color;
+  border-bottom: 1px solid #ececec;
+}
+.header-all {
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  & &__item + &__item {
+    margin-left: 50px;
+  }
+  & &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    transition: color 250ms $timing-function;
+  }
+  & &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    transition: color 250ms $timing-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $hover-color;
+  }
+  & .current {
+    color: $hover-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    position: relative;
+  }
+  &.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid $hover-color;
+    border-radius: 2px;
+    background-color: $hover-color;
+  }
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  & &__item + &__item {
+    margin-left: 50px;
+  }
+  & &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $grey-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    transition: color 250ms $timing-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $hover-color;
+  }
+  &__icon-mail {
+    display: block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__icon-tel {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

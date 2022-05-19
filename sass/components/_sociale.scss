@@ -1,0 +1,36 @@
+.sociale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociale-team {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $wite-color;
+    border-radius: 50%;
+    color: #afb1b8;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $wite-color;
+    background-color: $hover-color;
+  }
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
