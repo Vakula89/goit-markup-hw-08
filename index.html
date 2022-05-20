@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,14 +16,22 @@
 <body>
   <header class="page-header">
     <div class="container header-all">
-    <nav class="main-nav">
-  <a class="logo-header" href="#"> <span class="web-header">Web</span>Studio</a>   
+  
+  <a class="logo-header" href="#"> <span class="web-header">Web</span>Studio</a>
+  
+
+  <div class="menu-burger" data-menu-open>
+    <span class="menu-burger__line"></span>
+    <span class="menu-burger__line"></span>
+    <span class="menu-burger__line"></span>
+  </div>
+  
   <ul class="site-nav">
           <li class="site-nav__item" ><a href="./index.html" class="site-nav__link current">Студия</a></li>
           <li class="site-nav__item" ><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
           <li class="site-nav__item" ><a href="#" class="site-nav__link">Контакты</a></li>
       </ul>
-      </nav>
+    
 <ul class="auth-nav">
     <li class="auth-nav__item" ><a href="mailto:info@devstudio.com" class="auth-nav__link"> 
       <svg class="auth-nav__icon-mail">
@@ -93,7 +101,7 @@
       </div>
       </section>
 
-      <section>
+      <section class="about-us-section">
         <div class="container">
           <h2 class="title-about-us">Чем мы занимаемся</h2>
             <ul class="about-us">
@@ -274,42 +282,42 @@
       <div class="container">
         <h2 class="partners-title">Постоянные клиенты</h2>
         <ul class="partners">
-          <li> 
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo1"></use>
             </svg>
           </a> 
-        </li>
-          <li> 
+        </li >
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo2"></use>
             </svg>
           </a>
         </li>
-          <li> 
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo3"></use>
             </svg>
           </a>
         </li>
-          <li> 
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo4"></use>
             </svg>
           </a>
         </li>
-          <li> 
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo5"></use>
             </svg>
           </a>
         </li>
-          <li> 
+          <li class="partners__list-element"> 
             <a class="partners__logo" href="#">
             <svg class="partners__icon">
               <use href="./images/symbol-defs-new.svg#icon-Logo6"></use>
@@ -443,7 +451,10 @@
 </form>
   </div>
     </div>
+
+    <div class="mobile-menu is-hidden" data-menu>
+<div class="mobile-menu__close-btn" data-menu-close></div>
+    </div>
   <script src="./js/modal.js"></script>
 </body>
 </html>
-

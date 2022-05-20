@@ -1,3 +1,6 @@
+.about-us-section {
+  width: 100%;
+}
 .title-about-us {
   margin-bottom: 50px;
   margin-top: 0;
@@ -13,6 +16,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  gap: 30px;
 
   &__img {
     position: relative;
@@ -36,7 +40,9 @@
     text-transform: uppercase;
     color: $wite-color;
   }
-  & &__img + &__img {
-    margin-left: 30px;
+}
+@media (max-width: 767px) {
+  .about-us-section {
+    display: none;
   }
 }

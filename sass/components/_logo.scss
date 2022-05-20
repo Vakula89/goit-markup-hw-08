@@ -13,8 +13,6 @@
   color: $hover-color;
 }
 .logo-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -24,4 +22,9 @@
 }
 .web-header {
   color: $hover-color;
+}
+@media (max-width: 767px) {
+  .logo-header {
+    font-size: 24px;
+  }
 }

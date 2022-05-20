@@ -14,8 +14,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,4 +34,21 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $wite-color;
+}
+@media (max-width: 767px) {
+  .main-text {
+    font-size: 26px;
+    width: 100%;
+  }
+  .main-banner {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/main-baner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

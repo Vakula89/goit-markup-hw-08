@@ -166,3 +166,33 @@ footer {
     color: $wite-color;
   }
 }
+@media (max-width: 767px) {
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-sociale {
+    margin: 0;
+    padding-top: 60px;
+  }
+  .subscription__form {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .subscription__input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+  .subscription {
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
+
+    &__button {
+      margin: 0;
+    }
+  }
+}
