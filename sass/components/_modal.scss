@@ -20,8 +20,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // width: 528px;
-  // height: 581px;
+  width: 528px;
+  height: 581px;
   border-radius: 4px;
   background: $wite-color;
 }
@@ -57,7 +57,7 @@
   margin-bottom: 12px;
 
   color: $accent-color;
-  font-weight: 700;
+  font-weight: $bold-font-weight;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -195,4 +195,13 @@
   color: $hover-color;
   font-size: 14px;
   line-height: 1.714;
+}
+@media (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .accept-rule {
+    flex-wrap: wrap;
+  }
 }

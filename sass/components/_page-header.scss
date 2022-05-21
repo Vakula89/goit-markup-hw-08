@@ -25,7 +25,7 @@
 
     color: $accent-color;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $medium-font-weight;
     line-height: 1.14;
     transition: color 250ms $timing-function;
   }
@@ -38,7 +38,7 @@
 .site-nav .current {
   color: $hover-color;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $medium-font-weight;
   line-height: 1.14;
   position: relative;
 }
@@ -60,11 +60,9 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  gap: 50px;
 
-  & &__item + &__item {
-    margin-left: 50px;
-  }
-  & &__link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,11 +118,20 @@
   }
 }
 
-// @media (max-width: 1199px) {
-//   .header-all {
-//     min-height: 160px;
-//   }
-// }
+@media (max-width: 1199px) {
+  .header-all {
+    min-height: 80px;
+  }
+  .auth-nav {
+    flex-direction: column;
+    gap: 10px;
+
+    &__link {
+      padding: 0;
+      justify-content: flex-start;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .header-all {

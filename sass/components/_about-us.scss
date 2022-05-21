@@ -5,7 +5,7 @@
   margin-bottom: 50px;
   margin-top: 0;
 
-  font-weight: 700;
+  font-weight: $bold-font-weight;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -32,7 +32,7 @@
     padding-bottom: 27px;
     background: rgba(47, 48, 58, 0.8);
 
-    font-weight: 700;
+    font-weight: $bold-font-weight;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -41,7 +41,7 @@
     color: $wite-color;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .about-us-section {
     display: none;
   }
