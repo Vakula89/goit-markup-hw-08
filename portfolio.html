@@ -16,8 +16,17 @@
 <body>
     <header class="page-header">
         <div class="container header-all">
+            
         <nav class="main-nav">
             <a class="logo-header" href="#"> <span class="web-header">Web</span>Studio</a>
+
+            <div class="menu-burger" data-menu-open>
+                <span class="menu-burger__line"></span>
+                <span class="menu-burger__line"></span>
+                <span class="menu-burger__line"></span>
+            </div>
+
+
             <ul class="site-nav">
                 <li class="site-nav__item" ><a href="./index.html" class="site-nav__link">Студия</a></li>
                 <li class="site-nav__item" ><a href="./portfolio.html"class="site-nav__link current">Портфолио</a></li>
@@ -57,7 +66,7 @@
         <li class="button-nav__item"><button type="button" class="button-nav__button"> Маркетинг </button></li>
     </ul>
     <ul class="card">
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-1-2.jpg" alt="img-1-2" width="370">
@@ -70,7 +79,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-2-2.jpg" alt="img-2-2" width="370">
@@ -83,7 +92,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-3-2.jpg" alt="img-3-2" width="370">
@@ -96,7 +105,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-4-2.jpg" alt="img-4-2" width="370">
@@ -109,7 +118,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-5-2.jpg" alt="img-5-2" width="370">
@@ -122,7 +131,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-6-2.jpg" alt="img-6-2" width="370">
@@ -135,7 +144,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-7-2.jpg" alt="img-7-2" width="370">
@@ -148,7 +157,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-8-2.jpg" alt="img-8-2" width="370">
@@ -161,7 +170,7 @@
             </div>
         </a>
         </li>
-        <li>
+        <li class="card__item">
             <a class="card__link" href="#">
                 <div class="card__thumb">
             <img src="images/img-9-2.jpg" alt="img-9-2" width="370">
@@ -238,5 +247,39 @@
         </div>
     </div>
 </footer>
+
+<div class="mobile-menu is-hidden" data-menu>
+    <ul class="mobile-list">
+        <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link current">Студия</a></li>
+        <li class="mobile-list__item"><a href="./portfolio.html" class="mobile-list__link">Портфолио</a></li>
+        <li class="mobile-list__item"><a href="#" class="mobile-list__link">Контакты</a></li>
+    </ul>
+
+    <ul class="mobile-info">
+        <li class="mobile-info__item"><a href="tel:+380961111111" class="mobile-info__tel">
+                +38 096 111 11 11
+            </a>
+        </li>
+        <li class="mobile-info__item"><a href="mailto:info@devstudio.com" class="mobile-info__mail">
+                info@devstudio.com
+            </a>
+        </li>
+    </ul>
+    <div class="mobile-menu__close-btn" data-menu-close></div>
+    <div class="mobile-sociale">
+        <ul class="mobile-sociale__list">
+            <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Instagram</a></li>
+            <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Twitter</a></li>
+            <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Facebook</a></li>
+            <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">LinkedIn</a></li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+<script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

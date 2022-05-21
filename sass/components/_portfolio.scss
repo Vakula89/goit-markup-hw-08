@@ -10,10 +10,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
+  gap: 8px;
 
-  & &__item + &__item {
-    margin-left: 8px;
-  }
   & .current {
     background-color: $hover-color;
     color: $wite-color;
@@ -113,5 +111,41 @@ p {
     line-height: 1.88;
     background: $wite-color;
     color: $grey-color;
+  }
+}
+@media (max-width: 767px) {
+  .header-all {
+    min-height: 60px;
+    align-items: center;
+  }
+
+  .site-nav,
+  .auth-nav {
+    display: none;
+  }
+
+  .menu-burger {
+    display: block;
+    margin: 0;
+  }
+  .button-nav {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: start;
+  }
+  .card__thumb {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+  }
+  .card__link {
+    width: 100vw;
+  }
+  .card__description {
+    width: 100vw;
+  }
+  .card__item {
+    width: 100vw;
   }
 }

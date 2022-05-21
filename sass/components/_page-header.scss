@@ -102,6 +102,7 @@
   width: 40px;
   height: 40px;
   padding: 12px 8px;
+  margin: 0;
 
   &__line {
     background-color: $accent-color;
@@ -116,29 +117,6 @@
 
   &:hover .menu-burger__line {
     background-color: $hover-color;
-  }
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-
-  background-color: $wite-color;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
-
-  &.is-hidden {
-    display: none;
-  }
-
-  &__close-btn {
-    width: 30px;
-    height: 30px;
-    background-color: black;
   }
 }
 
