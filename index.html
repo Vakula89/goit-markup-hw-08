@@ -58,7 +58,7 @@
         <div class="container">
           <h1 class="main-text">Эффективные решения для вашего бизнеса  
           </h1>
-          <button data-modal-open type="button" class="button">Заказать услугу</button>
+          <button data-modal-open type="button" class="button button__open-modal">Заказать услугу</button>
         </div>
         </section>
         
@@ -121,8 +121,10 @@
       <section class="team"> 
         <div class="container">
         <h2 class="text-team">Наша команда</h2>
+
         <ul class="team-name">
-        <li class="team-name__item"><img src="images/teamcard1.jpg" alt="teamcard1" width="270" height="260">
+        <li class="team-name__item">
+          <img src="images/teamcard1.jpg" alt="teamcard1" width="270" height="260">
         <div class="name-description">
         <h3 class="name-description__name">Игорь Демьяненко</h3>
         <p class="name-description__profession">Product Designer</p>
@@ -446,38 +448,46 @@
       Соглашаюсь с рассылкой и принимаю
       <a class="contract" href="#">Условия договора</a>
     </label>
-    <button class="button__btn-submit" type="submit">Отправить</button>
+    <button class="button__btn-submit button" type="submit">Отправить</button>
   </div>
 </form>
   </div>
     </div>
 
     <div class="mobile-menu is-hidden"  data-menu>
+      <div class="mobile-menu__close-btn" data-menu-close>
+        <svg width="30" height="30">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </div>
+      
       <ul class="mobile-list">
         <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link current">Студия</a></li>
         <li class="mobile-list__item"><a href="./portfolio.html" class="mobile-list__link">Портфолио</a></li>
         <li class="mobile-list__item"><a href="#" class="mobile-list__link">Контакты</a></li>
       </ul>
       
-      <ul class="mobile-info">
-        <li class="mobile-info__item"><a href="tel:+380961111111" class="mobile-info__tel">
+      <div class="mobile-memu__footer">
+        <ul class="mobile-info">
+          <li class="mobile-info__item"><a href="tel:+380961111111" class="mobile-info__tel">
             +38 096 111 11 11
           </a>
         </li>
         <li class="mobile-info__item"><a href="mailto:info@devstudio.com" class="mobile-info__mail">
-            info@devstudio.com
-          </a>
-        </li>
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    
+    <div class="mobile-sociale">
+      <ul class="mobile-sociale__list">
+        <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Instagram</a></li>
+        <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Twitter</a></li>
+        <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Facebook</a></li>
+        <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">LinkedIn</a></li>
       </ul>
-      <div class="mobile-menu__close-btn" data-menu-close></div>
-      <div class="mobile-sociale">
-        <ul class="mobile-sociale__list">
-          <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Instagram</a></li>
-          <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Twitter</a></li>
-          <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">Facebook</a></li>
-          <li class="mobile-sociale__item"><a href="#" class="mobile-sociale__link">LinkedIn</a></li>
-        </ul>
-      </div>
+    </div>
+  </div>
 
 </div>
 
