@@ -46,16 +46,16 @@
   }
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .card {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding-left: 0;
   gap: 15px;
+
+  &__item {
+    width: calc(33% - 15px);
+  }
 
   &__link {
     display: block;
@@ -86,11 +86,14 @@ p {
     position: relative;
     height: 294px;
     overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
   }
 
   &__img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
 
   &__link:hover &__text {
@@ -130,6 +133,20 @@ p {
     color: $grey-color;
   }
 }
+@media (max-width: 1199px) {
+  .card {
+    margin: 0;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc(50% - 15px);
+    }
+
+    .card__link {
+      max-width: 100%;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .header-all {
@@ -146,20 +163,13 @@ p {
     display: block;
     margin: 0;
   }
+
   .button-nav {
     flex-wrap: wrap;
     margin-bottom: 40px;
     justify-content: start;
   }
-  .card__thumb {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-  }
-  .card__link {
-    max-width: 100%;
-  }
+
   .card__description {
     width: 100%;
   }

@@ -15,18 +15,21 @@
   &.is-hidden {
     display: none;
   }
-
-  &__close-btn {
-    width: 30px;
-    height: 30px;
-    background-color: $wite-color;
-  }
 }
 
 .mobile-menu__close-btn {
   position: absolute;
   right: 15px;
   top: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $hover-color;
+  }
 }
 .mobile-list {
   display: flex;
