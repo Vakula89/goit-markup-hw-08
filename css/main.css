@@ -167,7 +167,7 @@ img {
             justify-content: center;
   }
   .benefits__item {
-    width: 354px;
+    width: calc(50% - 30px);
   }
   .benefits-section {
     padding-bottom: 60px;
@@ -1262,10 +1262,12 @@ footer {
   .partners {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .partners__list-element {
-    width: 226px;
-    height: 92px;
+    width: calc(33% - 30px);
   }
 }
 

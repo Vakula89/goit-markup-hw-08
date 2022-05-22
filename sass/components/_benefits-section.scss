@@ -52,7 +52,7 @@
     justify-content: center;
 
     &__item {
-      width: 354px;
+      width: calc(50% - 30px);
     }
   }
   .benefits-section {

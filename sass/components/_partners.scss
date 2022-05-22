@@ -47,9 +47,9 @@
 @media (max-width: 1199px) {
   .partners {
     flex-wrap: wrap;
+    justify-content: center;
     &__list-element {
-      width: 226px;
-      height: 92px;
+      width: calc(33% - 30px);
     }
   }
 }
