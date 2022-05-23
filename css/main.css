@@ -1520,6 +1520,12 @@ footer {
   .card .card__link {
     max-width: 100%;
   }
+  .card .card__description {
+    width: 100%;
+  }
+  .card .card-thumb {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
