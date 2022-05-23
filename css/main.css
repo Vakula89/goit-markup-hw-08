@@ -99,6 +99,12 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 .benefits-section {
   padding-bottom: 0;
 }
@@ -605,7 +611,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 1600px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -632,6 +638,7 @@ footer {
     width: 100%;
   }
   .main-banner {
+    padding: 118px 60px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
   }
@@ -644,14 +651,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
+  .main-text {
+    font-size: 26px;
+    width: 100%;
+  }
   .main-banner {
+    padding: 118px 204px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
   }
 }
 
-@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
@@ -688,7 +700,7 @@ footer {
           justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding: 40px 48px;
+  padding: 48px 0px 48px 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -801,6 +813,12 @@ footer {
   padding: 0 10px;
 }
 
+@media (max-width: 479px) {
+  .mobile-info__tel {
+    font-size: 30px;
+  }
+}
+
 .backdrop {
   position: fixed;
   width: 100vw;
@@ -833,6 +851,7 @@ footer {
   position: relative;
   width: 100%;
   max-width: 528px;
+  max-height: 609px;
   border-radius: 4px;
   background: #ffffff;
 }
@@ -1051,6 +1070,18 @@ footer {
   .accept-rule,
   .contract {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .title-order {
+    font-size: 14px;
+  }
+  .accept-rule {
+    margin-bottom: 15px;
+  }
+  .data-user {
+    padding: 30px;
   }
 }
 
@@ -1286,6 +1317,7 @@ footer {
 
 .partners__list-element {
   width: 100%;
+  min-height: 92px;
 }
 
 @media (max-width: 1199px) {
@@ -1383,16 +1415,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
-  gap: 15px;
-}
-
-.card__item {
-  width: calc(33% - 15px);
+  gap: 30px;
 }
 
 .card__link {
   display: block;
-  max-width: 370px;
+  max-width: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1477,11 +1505,14 @@ footer {
   color: #757575;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .card {
     margin: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .card__item {
     width: calc(50% - 15px);

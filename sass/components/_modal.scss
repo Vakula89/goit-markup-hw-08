@@ -23,6 +23,7 @@
   position: relative;
   width: 100%;
   max-width: 528px;
+  max-height: 609px;
   border-radius: 4px;
   background: $wite-color;
 }
@@ -202,5 +203,16 @@
   .accept-rule,
   .contract {
     font-size: 12px;
+  }
+}
+@media (max-width: 479px) {
+  .title-order {
+    font-size: 14px;
+  }
+  .accept-rule {
+    margin-bottom: 15px;
+  }
+  .data-user {
+    padding: 30px;
   }
 }

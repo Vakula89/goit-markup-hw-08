@@ -124,17 +124,36 @@
 
         <ul class="team-name">
         <li class="team-name__item">
-          <img 
-      
-          src="images/teamcard1.jpg" 
-          alt="teamcard1" width="270" height="260">
+          <picture>
+            <source
+            srcset="
+            ./images/team/igor270-desktop@1x.jpg 1x,
+            ./images/team/igor270-desktop@2x.jpg 2x"
+            type="image/jpeg"
+            media="(min-width: 1200px)">
+
+            <source srcset="
+            ./images/team/igor354-tablet@1x.jpg 1x,
+            ./images/team/igor354-tablet@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 768px)">
+
+            <source srcset="
+            ./images/team/igor450-mobile@1x.jpg 1x,
+            ./images/team/igor450-mobile@2x.jpg 2x" 
+            type="image/jpeg" media="(max-width: 767px)">
+
+            <img src="./images/team/igor450-mobile@1x.jpg" 
+            alt="Игорь Демьяненко" srcset="./images/team/igor450-mobile@2x.jpg 2x">
+
+          </picture>
+         
         <div class="name-description">
         <h3 class="name-description__name">Игорь Демьяненко</h3>
         <p class="name-description__profession">Product Designer</p>
         <div class="sociale">
           <ul class="sociale-team"> 
             <li>
-          <a class="sociale-team__link" href="#">
+              <a class="sociale-team__link" href="#">
         <svg class="sociale-team__icon">
           <use href="./images/symbol-defs-new.svg#icon-instagram"></use>
         </svg>
@@ -165,7 +184,27 @@
         </div>
         </div>
         </li>
-        <li class="team-name__item"><img src="images/teamcard2.jpg" alt="teamcard2" width="270" height="260">
+        <li class="team-name__item">
+          <picture>
+            <source srcset="
+            ./images/team/olga270-desktop@1x.jpg 1x,
+            ./images/team/olga270-desktop@2x.jpg 2x"
+             type="image/jpeg" media="(min-width: 1200px)">
+
+            <source srcset="
+            ./images/team/olga354-tablet@1x.jpg 1x,
+            ./images/team/olga354-tablet@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 768px)">
+
+            <source srcset="
+            ./images/team/olga450-mobile@1x.jpg 1x,
+            ./images/team/olga450-mobile@2x.jpg 2x" 
+            type="image/jpeg" media="(max-width: 767px)">
+
+            <img src="./images/team/olga450-mobile@1x.jpg" 
+            alt="Ольга Репина" srcset="./images/team/olga450-mobile@2x.jpg 2x">
+          </picture>
+        
         <div class="name-description">
         <h3 class="name-description__name">Ольга Репина</h3>
         <p class="name-description__profession">Frontend Developer</p>
@@ -203,7 +242,28 @@
         </div>
         </div>
         </li>
-        <li class="team-name__item"><img src="images/teamcard3.jpg" alt="teamcard3" width="270" height="260">
+        <li class="team-name__item">
+
+          <picture>
+            <source srcset="
+            ./images/team/mykola270-desktop@1x.jpg 1x,
+            ./images/team/mykola270-desktop@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 1200px)">
+
+            <source srcset="
+            ./images/team/mykola354-tablet@1x.jpg 1x,
+            ./images/team/mykola354-tablet@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 768px)">
+
+            <source srcset="
+            ./images/team/mykola450-mobile@1x.jpg 1x,
+            ./images/team/mykola450-mobile@2x.jpg 2x" 
+            type="image/jpeg" media="(max-width: 767px)">
+
+            <img src="./images/team/mykola450-mobile@1x.jpg" alt="Николай Тарасов" srcset="
+            ./images/team/mykola450-mobile@2x.jpg 2x">
+            </picture>
+
         <div class="name-description">
         <h3 class="name-description__name">Николай Тарасов</h3>
         <p class="name-description__profession">Marketing</p>
@@ -241,7 +301,29 @@
         </div>
         </div>
         </li>
-        <li class="team-name__item"><img src="images/teamcard4.jpg" alt="teamcard4" width="270" height="260">
+        <li class="team-name__item">
+
+          <picture>
+            <source srcset="
+            ./images/team/myhailo270-desktop@1x.jpg 1x,
+            ./images/team/myhailo270-desktop@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 1200px)">
+
+            <source srcset="
+            ./images/team/myhailo354-tablet@1x.jpg 1x,
+            ./images/team/myhailo354-tablet@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 768px)">
+
+            <source srcset="
+            ./images/team/myhailo450-mobile@1x.jpg 1x,
+            ./images/team/myhailo450-mobile@2x.jpg 2x" 
+            type="image/jpeg" media="(max-width: 767px)">
+
+            <img src="./images/team/myhailo450-mobile@1x.jpg" 
+            alt="Михаил Ермаков" srcset="
+            ./images/team/myhailo450-mobile@2x.jpg 2x">
+          </picture>
+
         <div class="name-description">
         <h3 class="name-description__name">Михаил Ермаков</h3>
         <p class="name-description__profession">UI Designer</p>
@@ -450,8 +532,6 @@
         <use href="./images/symbol-defs-3.svg#icon-icon-check" width="16" height="15"></use>
       </svg>
       </span>
-     
-      
       Соглашаюсь с рассылкой и принимаю
       <a class="contract" href="#">Условия договора</a>
     </label>
@@ -476,7 +556,7 @@
       
       <div class="mobile-memu__footer">
         <ul class="mobile-info">
-          <li class="mobile-info__item"><a href="tel:+380961111111" class="mobile-info__tel">
+          <li><a href="tel:+380961111111" class="mobile-info__tel">
             +38 096 111 11 11
           </a>
         </li>

@@ -68,7 +68,25 @@
         <li class="card__item">
         <a class="card__link" href="#">
             <div class="card__thumb">
-            <img class="card__img" src="images/img-1-2.jpg" alt="img-1-2" width="370">
+        <picture>
+            <source srcset="
+            ./images/projects/tech370-desktop@1x.jpg 1x,
+            ./images/projects/tech370-desktop@2x.jpg 2x"
+             type="image/jpeg" media="(min-width: 1200px)">
+
+            <source srcset="
+            ./images/projects/tech354-tablet@1x.jpg 1x,
+            ./images/projects/tech354-tablet@2x.jpg 2x" 
+            type="image/jpeg" media="(min-width: 768px)">
+
+            <source srcset="
+            ./images/projects/tech450-mobile@1x.jpg 1x,
+            ./images/projects/tech450-mobile@2x.jpg 2x"
+             type="image/jpeg" media="(max-width: 767px)">
+
+            <img src="./images/projects/tech450-mobile@1x.jpg" 
+            alt="Технокряк" srcset="./images/projects/tech450-mobile@2x.jpg 2x">
+        </picture>
 
             <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
