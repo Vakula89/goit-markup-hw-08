@@ -93,15 +93,27 @@ img {
   display: block;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   section {
     padding: 60px 0;
+  }
+  .container {
+    max-width: 768px;
   }
 }
 
 @media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
   .container {
     max-width: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -603,8 +615,6 @@ footer {
 }
 
 .main-banner {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-top: 0;
   text-align: center;
   text-align: center;
@@ -639,15 +649,15 @@ footer {
   }
   .main-banner {
     padding: 118px 60px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-main-banner/bgmain-ban-mobile@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-main-banner/bgmain-ban-mobile@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-main-banner/bgmain-ban-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-main-banner/bgmain-ban-mobile@2x.jpg);
   }
 }
 
@@ -658,29 +668,37 @@ footer {
   }
   .main-banner {
     padding: 118px 204px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-banner/bgmain-ban-tablet@1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-main-banner/bgmain-ban-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .main-text {
+    font-size: 44px;
+    width: 100%;
+  }
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background-main-banner/bgmain-ban-desktop@1x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background-main-banner/bgmain-ban-desktop@1x.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: auto;
+    padding-right: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-main-banner/bgmain-ban-desktop@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-banner/bgmain-ban-desktop@1x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
   }
 }
 
@@ -1409,9 +1427,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
@@ -1434,7 +1449,7 @@ footer {
 
 .card__thumb {
   position: relative;
-  height: 294px;
+  max-height: 294px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,41 +1524,6 @@ footer {
   color: #757575;
 }
 
-@media (min-width: 1200px) {
-  .card {
-    margin: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .card__item {
-    width: calc(33% - 30px);
-  }
-  .card .card__description {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .card {
-    margin: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .card__item {
-    max-width: 354px;
-    width: calc(50% - 30px);
-  }
-  .card .card__description {
-    width: 100%;
-  }
-}
-
 @media (max-width: 767px) {
   .header-all {
     min-height: 60px;
@@ -1567,7 +1547,38 @@ footer {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .card__item {
+    width: 100%;
+  }
   .card__description {
+    width: 100%;
+  }
+  .card__img {
+    width: 100%;
+    height: auto;
+  }
+  .card__text {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: last baseline;
+        -ms-flex-pack: last baseline;
+            justify-content: last baseline;
+  }
+  .card__item {
+    width: 354px;
+  }
+  .card__description {
+    width: 100%;
+  }
+  .card__img {
     width: 100%;
   }
 }

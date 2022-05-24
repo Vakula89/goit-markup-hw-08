@@ -38,13 +38,25 @@ section {
 img {
   display: block;
 }
-@media (max-width: 1199px) {
+
+@media (min-width: 768px) {
   section {
     padding: 60px 0;
   }
+  .container {
+    max-width: 768px;
+  }
 }
 @media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
   .container {
     max-width: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
