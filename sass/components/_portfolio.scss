@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .card {
     margin: 0;
     flex-wrap: wrap;
@@ -189,6 +189,7 @@
     &__description {
       flex-grow: 1;
       width: 100%;
+      letter-spacing: 0.06em;
     }
     &__title {
       line-height: 36px;

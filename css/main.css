@@ -1588,7 +1588,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .card {
     margin: 0;
     -ms-flex-wrap: wrap;
@@ -1608,6 +1608,7 @@ footer {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 100%;
+    letter-spacing: 0.06em;
   }
   .card__title {
     line-height: 36px;
