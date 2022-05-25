@@ -628,7 +628,7 @@ footer {
 }
 
 .main-text {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -645,10 +645,14 @@ footer {
 @media screen and (max-width: 767px) {
   .main-text {
     font-size: 26px;
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
   .main-banner {
     padding: 118px 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-banner/bgmain-ban-mobile@1x.jpg");
   }
@@ -699,6 +703,18 @@ footer {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-main-banner/bgmain-ban-desktop@2x.jpg);
+  }
+}
+
+@media (max-width: 479px) {
+  .main-text {
+    font-size: 25px;
+  }
+  .main-banner {
+    padding: 118px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -781,8 +797,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   padding-left: 0;
   gap: 32px;
@@ -1575,11 +1593,26 @@ footer {
   .card__item {
     width: 354px;
   }
+  .card__thumb {
+    height: 100%;
+  }
   .card__description {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 100%;
+  }
+  .card__title {
+    line-height: 36px;
   }
   .card__img {
     width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .card__text {
+    font-size: 16px;
   }
 }
 

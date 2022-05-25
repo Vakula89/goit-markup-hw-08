@@ -180,12 +180,25 @@
     &__item {
       width: 354px;
     }
+    &__thumb {
+      height: 100%;
+    }
 
     &__description {
+      flex-grow: 1;
       width: 100%;
     }
+    &__title {
+      line-height: 36px;
+    }
+
     &__img {
       width: 100%;
     }
+  }
+}
+@media (max-width: 479px) {
+  .card__text {
+    font-size: 16px;
   }
 }
