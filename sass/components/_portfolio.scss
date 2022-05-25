@@ -58,7 +58,9 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     max-width: 100%;
     text-decoration: none;
     transition: box-shadow 250ms $timing-function;
